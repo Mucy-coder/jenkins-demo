@@ -10,12 +10,8 @@ import java.util.Map;
 public class TestController {
 
     @GetMapping("/index")
-    public Map<String, String> index()
+    public String index()
     {
-        Map<String, String> result = new HashMap<>();
-        result.put("test1", "test1");
-        result.put("test2", "test2");
-        result.put("test3", "test3");
-        return result;
+        return "jenkins demo test success!----------------------王思怡是个大傻逼";
     }
 }
